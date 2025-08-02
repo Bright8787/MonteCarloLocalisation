@@ -1,10 +1,10 @@
 # Class: Robotics fundamental 
- Robot model: IRobot Education
- Content: 
-   Closed-Loop Control : PID
-   Path Planning Algorithm : Aftificial Potential Field 
-   Localisation Algorithm: Particle Filter
+ Robot model: IRobot Education<br/>
+ Content:<br/> 
+   Closed-Loop Control : PID<br/>
+   Path Planning Algorithm : Aftificial Potential Field <br/>
+   Localisation Algorithm: Particle Filter<br/>
 
-Hardware: 
-  Rotary-Encoder, LIDAR-Sensor, DC-Motor, Raspberry pi 4. 
+Hardware: <br/>
+  Rotary-Encoder, LIDAR-Sensor, DC-Motor, Raspberry pi 4. <br/>
   
