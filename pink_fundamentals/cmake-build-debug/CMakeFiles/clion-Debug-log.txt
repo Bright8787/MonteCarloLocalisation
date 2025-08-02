@@ -1,0 +1,46 @@
+/snap/clion/341/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/341/bin/ninja/linux/x64/ninja -G Ninja -S /run/user/1000/gvfs/sftp:host=192.168.0.8,user=pink/home/pink/pink_ws/src/pink_fundamentals -B /run/user/1000/gvfs/sftp:host=192.168.0.8,user=pink/home/pink/pink_ws/src/pink_fundamentals/cmake-build-debug
+CMake Deprecation Warning at CMakeLists.txt:3 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+
+
+-- The C compiler identification is unknown
+-- The CXX compiler identification is unknown
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - failed
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc - broken
+CMake Error at /snap/clion/341/bin/cmake/linux/x64/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:67 (message):
+  The C compiler
+
+    "/usr/bin/cc"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: '/run/user/1000/gvfs/sftp:host=192.168.0.8,user=pink/home/pink/pink_ws/src/pink_fundamentals/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9yZNO1'
+    
+    Run Build Command(s): /snap/clion/341/bin/ninja/linux/x64/ninja -v cmTC_2ea0b
+    [1/2] /usr/bin/cc    -o CMakeFiles/cmTC_2ea0b.dir/testCCompiler.c.o -c '/run/user/1000/gvfs/sftp:host=192.168.0.8,user=pink/home/pink/pink_ws/src/pink_fundamentals/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9yZNO1/testCCompiler.c'
+    FAILED: CMakeFiles/cmTC_2ea0b.dir/testCCompiler.c.o 
+    /usr/bin/cc    -o CMakeFiles/cmTC_2ea0b.dir/testCCompiler.c.o -c '/run/user/1000/gvfs/sftp:host=192.168.0.8,user=pink/home/pink/pink_ws/src/pink_fundamentals/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9yZNO1/testCCompiler.c'
+    /tmp/cc8EDcct.s: Assembler messages:
+    /tmp/cc8EDcct.s: Fatal error: can't write 16 bytes to section .note.gnu.property of CMakeFiles/cmTC_2ea0b.dir/testCCompiler.c.o: 'Vorgang wird nicht unterstützt'
+    /tmp/cc8EDcct.s: Fatal error: CMakeFiles/cmTC_2ea0b.dir/testCCompiler.c.o: Datei oder Verzeichnis nicht gefunden
+    ninja: build stopped: subcommand failed.
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:4 (project)
+
+
+-- Configuring incomplete, errors occurred!

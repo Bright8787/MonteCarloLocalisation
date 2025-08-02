@@ -1,0 +1,11 @@
+# row and column are coordinates in the grid starting from 0
+int32 row_start
+int32 column_start
+
+int32 row_end
+int32 column_end
+
+bool localised
+---
+int32 distance
+bool success

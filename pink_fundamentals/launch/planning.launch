@@ -1,0 +1,22 @@
+
+<launch>
+  <!-- 1. Wanderer node -->
+  <node pkg="pink_fundamentals" type="wanderer_try_final" name="wanderer_try_final" output="screen">
+    <!-- any required parameters can go here -->
+  </node>
+
+  <!-- 2. Map publisher for RViz -->
+  <node pkg="pink_fundamentals" type="publish_map_rviz" name="publish_map_rviz" output="screen">
+    <!-- remap topics or set params if needed -->
+  </node>
+
+  <!-- 3. Move-to-position service server -->
+  <node pkg="pink_fundamentals" type="moveToPosition_server" name="move_to_position_server" output="screen">
+    <!-- this provides /move_to_position service -->
+  </node>
+
+  <!-- 4. Monte Carlo localization -->
+  <node pkg="pink_fundamentals" type="monte_carlo" name="monte_carlo" output="screen">
+    <!-- launches particle filter and publishes /pose and /exact_pose -->
+  </node>
+</launch>

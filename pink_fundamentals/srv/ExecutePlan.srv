@@ -1,0 +1,10 @@
+# constant as actions
+int32 RIGHT = 0
+int32 UP = 1
+int32 LEFT = 2
+int32 DOWN = 3
+# plan is a sequence of action
+int32[] plan
+---
+# return wether plan could succeded
+bool success

@@ -1,0 +1,7 @@
+<launch>
+  <param name="use_PID" value="false"/>
+  <node name="PID_drive" pkg="pink_fundamentals" type="PID_drive"/>
+  <node pkg="pink_fundamentals" type="execute_plan_server" name="execute_plan_server" output="screen"/>
+  <node name="align_server" pkg="pink_fundamentals" type="align_server"/>
+</launch>
+

@@ -1,0 +1,5 @@
+<launch>
+  <node name="align_server" pkg="pink_fundamentals" type="align_server"/>
+  <node name="PID_drive" pkg="pink_fundamentals" type="PID_drive"/>
+</launch>
+

@@ -1,0 +1,14 @@
+<launch>
+  <!-- Global parameter: enables or disables PID-based motion -->
+  <param name="use_PID" value="true"/>
+
+  <!-- Nodes -->
+  <!-- <node name="PID_drive" pkg="pink_fundamentals" type="PID_drive" output="screen" /> -->
+  <!-- <node name="publish_map" pkg="pink_fundamentals" type="publish_map.py" output="screen" /> -->
+
+  <node name="wanderer_try_final" pkg="pink_fundamentals" type="wanderer_try_final" output="screen" />
+  <node name="moveToPosition_server" pkg="pink_fundamentals" type="moveToPosition_server" output="screen" />
+  <node name="publish_map_rviz" pkg="pink_fundamentals" type="publish_map_rviz" output="screen" />
+  <!-- <node name="monte_carlo" pkg="pink_fundamentals" type="monte_carlo" output="screen" /> -->
+</launch>
+
